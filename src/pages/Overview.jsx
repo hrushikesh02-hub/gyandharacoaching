@@ -78,21 +78,22 @@ export function CollectionChart({ db }) {
             dataKey="month"
             axisLine={false}
             tickLine={false}
-            tick={{ fill: "#7b8386", fontSize: 11 }}
+            tick={{ fill: "#27483e", fontSize: 13, fontWeight: 600 }}
             dy={10}
           />
           <YAxis
             axisLine={false}
             tickLine={false}
             tickFormatter={(v) => `₹${v / 1000}k`}
-            tick={{ fill: "#7b8386", fontSize: 10 }}
+            tick={{ fill: "#27483e", fontSize: 12, fontWeight: 600 }}
           />
           <Tooltip
             formatter={(v) => [money(v), "Collected"]}
             contentStyle={{
               borderRadius: 10,
-              border: "1px solid #e3e7df",
-              fontSize: 12,
+              border: "1px solid #c9d5c4",
+              fontSize: 13,
+              fontWeight: 500,
             }}
           />
           <Area

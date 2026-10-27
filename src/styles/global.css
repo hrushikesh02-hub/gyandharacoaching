@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
 :root {
   font-family: "Manrope", sans-serif;
-  color: #243638;
+  color: #172b2e;
   background: #f7f8f3;
   font-synthesis: none;
+  font-size: 16px;
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  --navy: #1e3339;
-  --teal: #326e62;
+  -moz-osx-font-smoothing: grayscale;
+  --navy: #14282c;
+  --teal: #1f5c50;
   --ivory: #f7f8f3;
-  --line: #e5e8e0;
-  --muted: #7d8786;
-  --saffron: #d1a55d;
+  --line: #dbe2d6;
+  --muted: #3a534c;
+  --saffron: #96671a;
   --serif: "Lora", Georgia, serif;
 }
 * {
@@ -65,13 +68,14 @@ input,
 select,
 textarea {
   width: 100%;
-  border: 1px solid #dce1d9;
+  border: 1px solid #c8d3c4;
   border-radius: 7px;
   padding: 11px 12px;
   color: var(--navy);
   background: #fff;
   outline: none;
-  font-size: 13px;
+  font-size: 14.5px;
+  font-weight: 500;
   min-width: 0;
 }
 input:focus,
@@ -100,7 +104,7 @@ button:focus-visible {
   background: #dce9dc;
 }
 small {
-  font-size: 11px;
+  font-size: 14px;
 }
 strong {
   font-weight: 700;
@@ -126,7 +130,7 @@ html {
   padding: 12px 17px;
   border-radius: 6px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
   white-space: nowrap;
   transition:
@@ -139,7 +143,7 @@ html {
 }
 .button.secondary {
   background: #fff;
-  color: #374b48;
+  color: #1f3b38;
   border-color: #dfe4dc;
 }
 .button.secondary:hover {
@@ -162,7 +166,7 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--teal);
   padding: 0;
@@ -178,7 +182,7 @@ html {
   width: 34px;
   height: 34px;
   border-radius: 6px;
-  color: #71817b;
+  color: #2f4741;
   flex-shrink: 0;
 }
 .icon-button:hover {
@@ -190,7 +194,7 @@ html {
   background: #eef4ed;
   border: 1px solid #dce7da;
   border-radius: 5px;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   color: #3b7565;
   white-space: nowrap;
@@ -199,11 +203,11 @@ html {
   background: #deebdc;
 }
 .eyebrow {
-  font-size: 9px;
-  letter-spacing: 1.8px;
+  font-size: 12px;
+  letter-spacing: 1.6px;
   font-weight: 800;
-  color: #77907e;
-  line-height: 1.7;
+  color: #235649;
+  line-height: 1.6;
 }
 .brand {
   display: inline-flex;
@@ -244,11 +248,11 @@ html {
   font-weight: 600;
 }
 .brand small {
-  font-size: 7px;
-  letter-spacing: 2.4px;
-  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2.2px;
+  font-weight: 800;
   margin-top: 5px;
-  color: #778477;
+  color: #384e47;
 }
 .brand-dot {
   color: #b48f4f;
@@ -287,9 +291,9 @@ html {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.7;
-  color: #8c948d;
+  color: #354e46;
 }
 .demo-dot {
   height: 5px;
@@ -305,7 +309,7 @@ html {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   flex-shrink: 0;
   color: #597564;
@@ -314,7 +318,7 @@ html {
 .avatar.small {
   width: 31px;
   height: 31px;
-  font-size: 9px;
+  font-size: 13px;
 }
 .tone-1 {
   background: #f3e9dd;
@@ -335,9 +339,9 @@ html {
   gap: 4px;
   border-radius: 4px;
   background: #f1f3ee;
-  color: #758373;
+  color: #2e473f;
   padding: 5px 8px;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 600;
   white-space: nowrap;
   line-height: 1.2;
@@ -348,40 +352,40 @@ html {
 .badge.published,
 .badge.live-session {
   background: #eaf3e8;
-  color: #4c805b;
+  color: #1a5e30;
 }
 .badge.pending,
 .badge.partial,
 .badge.test {
   background: #fbf0dc;
-  color: #aa8546;
+  color: #805214;
 }
 .badge.overdue,
 .badge.absent,
 .badge.rejected {
   background: #faeae6;
-  color: #b07568;
+  color: #9c3524;
 }
 .badge.upi {
   background: #edf1e9;
-  color: #6b8164;
+  color: #235c36;
 }
 .badge.cash {
   background: #faf1e4;
-  color: #9c865f;
+  color: #7a571f;
 }
 .badge.bank-transfer {
   background: #eef0f8;
-  color: #7b82a0;
+  color: #31437a;
 }
 .badge.draft,
 .badge.expired,
 .badge.inactive {
   background: #f0f0ed;
-  color: #90938a;
+  color: #334a43;
 }
 .green-text {
-  color: #4c805f !important;
+  color: #1a5e30 !important;
 }
 .amber-text {
   color: #b58c4e !important;
@@ -390,7 +394,7 @@ html {
   color: #b36e62 !important;
 }
 .muted {
-  color: #85918c;
+  color: #334c44;
 }
 .amount {
   font-weight: 700;
@@ -429,8 +433,8 @@ html {
   letter-spacing: -0.35px;
 }
 .panel-head p {
-  font-size: 10px;
-  color: #87928b;
+  font-size: 13px;
+  color: #334c44;
   margin-top: 6px;
   line-height: 1.6;
 }
@@ -450,7 +454,7 @@ html {
   font-weight: 400;
 }
 .empty p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.7;
   max-width: 330px;
 }
@@ -472,9 +476,9 @@ html {
   line-height: 1.35;
 }
 .page-head p {
-  font-size: 11px;
+  font-size: 14px;
   margin-top: 8px;
-  color: #839086;
+  color: #314b43;
   line-height: 1.7;
 }
 .page-actions {
@@ -490,9 +494,9 @@ html {
   background: #fff;
   border: 1px solid var(--line);
   padding: 11px 12px;
-  font-size: 10px;
+  font-size: 13px;
   white-space: nowrap;
-  color: #718276;
+  color: #2c473f;
   border-radius: 6px;
 }
 .toast {
@@ -509,7 +513,7 @@ html {
   gap: 13px;
   align-items: center;
   border-radius: 9px;
-  font-size: 12px;
+  font-size: 14px;
   max-width: calc(100vw - 32px);
   width: max-content;
   animation: toastIn 0.25s ease;
@@ -529,7 +533,7 @@ html {
   right: 0;
   background: #f5ddaa;
   padding: 12px;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 @keyframes toastIn {
@@ -550,12 +554,12 @@ html {
   min-width: 0;
 }
 .field > span {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   color: #53655c;
 }
 .field small {
-  font-size: 10px;
+  font-size: 13px;
   color: #939c94;
   line-height: 1.6;
 }
@@ -565,10 +569,10 @@ html {
   gap: 0 18px;
 }
 .form-section-label {
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 1.5px;
-  color: #85927d;
+  color: #27574b;
   margin: 10px 0 20px;
   padding-top: 12px;
   border-top: 1px solid #ecefe6;
@@ -581,14 +585,14 @@ html {
   padding: 12px 14px;
   background: #fff0ea;
   color: #a95d4c;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.6;
   border-radius: 6px;
   margin: 13px 0;
 }
 .helper-text {
-  font-size: 10px;
-  color: #8c9589;
+  font-size: 13px;
+  color: #334c44;
   line-height: 1.8;
   margin: 16px 0;
 }
@@ -596,7 +600,7 @@ html {
   display: flex;
   align-items: center;
   gap: 9px;
-  font-size: 12px;
+  font-size: 14px;
   margin: 18px 0;
 }
 .modal-backdrop {
@@ -639,9 +643,9 @@ html {
   letter-spacing: -0.6px;
 }
 .modal > header p {
-  font-size: 11px;
+  font-size: 14px;
   margin-top: 6px;
-  color: #829183;
+  color: #334c44;
   line-height: 1.6;
 }
 .modal-actions {
@@ -654,9 +658,9 @@ html {
   padding-top: 18px;
 }
 .confirm-copy {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.8;
-  color: #758576;
+  color: #2d473e;
 }
 .search-field {
   display: flex;
@@ -675,7 +679,7 @@ html {
   border: 0;
   background: transparent;
   padding: 10px 0;
-  font-size: 11px;
+  font-size: 14px;
   box-shadow: none;
 }
 .search-field button {
@@ -694,7 +698,7 @@ html {
 .toolbar > select,
 .toolbar > input {
   width: auto;
-  font-size: 11px;
+  font-size: 14px;
   padding: 10px 12px;
 }
 .filters {
@@ -702,7 +706,7 @@ html {
   gap: 9px;
 }
 .filters select {
-  font-size: 10px;
+  font-size: 13px;
   min-width: 105px;
   padding: 10px 12px;
 }
@@ -714,15 +718,15 @@ table {
   border-collapse: collapse;
   width: 100%;
   text-align: left;
-  font-size: 11px;
+  font-size: 14px;
 }
 th {
   background: #fafbf7;
-  padding: 12px 20px;
-  font-size: 8px;
-  color: #8a9689;
+  padding: 13px 20px;
+  font-size: 12px;
+  color: #25443a;
   font-weight: 700;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.8px;
   white-space: nowrap;
   border-top: 1px solid #f0f2ed;
   border-bottom: 1px solid #ecefe8;
@@ -737,14 +741,15 @@ tr:last-child td {
   border-bottom: 0;
 }
 td strong {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
+  color: #152c24;
 }
 td small {
   display: block;
-  font-size: 9px;
-  margin-top: 2px;
-  color: #96a18f;
+  font-size: 12px;
+  margin-top: 3px;
+  color: #3d564e;
 }
 tbody tr:hover {
   background: #fcfdf9;
@@ -768,14 +773,14 @@ tbody tr:hover {
   gap: 8px;
 }
 .table-actions .text-button {
-  font-size: 9px;
+  font-size: 13px;
 }
 .table-footer {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid var(--line);
-  font-size: 10px;
-  color: #97a08e;
+  font-size: 13px;
+  color: #375048;
   padding: 18px 23px;
 }
 .filter-tabs {
@@ -787,8 +792,8 @@ tbody tr:hover {
 }
 .filter-tabs button {
   padding: 14px 0;
-  font-size: 11px;
-  color: #899687;
+  font-size: 14px;
+  color: #354f46;
   border-bottom: 2px solid transparent;
   white-space: nowrap;
 }
@@ -822,8 +827,8 @@ tbody tr:hover {
   letter-spacing: -0.8px;
 }
 .summary-strip span {
-  font-size: 10px;
-  color: #8c9788;
+  font-size: 13px;
+  color: #334c44;
 }
 /* Keep decorative notebook orbits inside the hero on narrow displays. */
 .hero {
@@ -843,34 +848,52 @@ tbody tr:hover {
   z-index: 30;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5c6 transparent;
+}
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: #cbd5c6;
+  border-radius: 4px;
 }
 .sidebar-brand {
-  padding: 30px 20px 28px;
+  padding: 26px 20px 20px;
+  flex-shrink: 0;
 }
 .sidebar-brand > .icon-button {
   display: none;
 }
 .workspace-label {
-  font-size: 8px;
-  letter-spacing: 1.5px;
-  color: #a0a88f;
-  padding: 13px 25px 14px;
-  font-weight: 700;
+  font-size: 11.5px;
+  letter-spacing: 1.6px;
+  color: #235446;
+  padding: 12px 22px 10px;
+  font-weight: 800;
+  flex-shrink: 0;
 }
 .sidebar nav {
   padding: 0 13px;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  flex-shrink: 0;
 }
 .sidebar nav a {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 13px;
-  color: #788575;
-  font-size: 11px;
-  font-weight: 500;
+  padding: 12px 14px;
+  color: #2c473f;
+  font-size: 14px;
+  font-weight: 600;
   border-radius: 6px;
 }
 .sidebar nav a svg {
@@ -894,12 +917,13 @@ tbody tr:hover {
   min-width: 20px;
   padding: 3px 5px;
   border-radius: 4px;
-  font-size: 9px;
+  font-size: 13px;
   text-align: center;
 }
 .sidebar-bottom {
   margin-top: auto;
   padding: 22px 24px 16px;
+  flex-shrink: 0;
 }
 .thought {
   border-top: 1px solid #e8ebdf;
@@ -912,21 +936,21 @@ tbody tr:hover {
 }
 .thought p {
   font-family: var(--serif);
-  color: #809071;
+  color: #285446;
   font-size: 17px;
   line-height: 1.6;
   letter-spacing: -0.5px;
   margin: 6px 0 8px;
 }
 .thought small {
-  font-size: 6px;
+  font-size: 11px;
   letter-spacing: 1.2px;
   color: #a5ad96;
 }
 .website-link,
 .logout {
-  font-size: 10px;
-  color: #8e9a84;
+  font-size: 13px;
+  color: #2f4941;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -947,14 +971,15 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 .sidebar-person strong {
-  font-size: 10px;
+  font-size: 13px;
 }
 .sidebar-person small {
   display: block;
-  color: #96a08f;
-  font-size: 9px;
+  color: #38524a;
+  font-size: 13px;
   margin-top: 3px;
 }
 .main-shell {
@@ -974,12 +999,12 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   gap: 13px;
-  font-size: 10px;
-  color: #a0aa98;
+  font-size: 13px;
+  color: #3d574f;
 }
 .breadcrumb strong {
-  font-size: 10px;
-  color: #64765e;
+  font-size: 13px;
+  color: #1e473b;
   font-weight: 500;
 }
 .breadcrumb > .icon-button {
@@ -997,8 +1022,8 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 9px;
-  color: #8c987e;
+  font-size: 13px;
+  color: #2d5447;
 }
 .year-pill > span {
   width: 5px;
@@ -1009,7 +1034,7 @@ tbody tr:hover {
 .bell {
   position: relative;
   display: flex;
-  color: #8f9d83;
+  color: #355348;
 }
 .bell i {
   width: 4px;
@@ -1044,16 +1069,16 @@ tbody tr:hover {
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  font-size: 8px;
-  color: #a0a98f;
+  font-size: 12px;
+  color: #3d574f;
 }
 .app-footer strong {
-  color: #7d8a70;
+  color: #284d41;
   font-family: var(--serif);
   font-weight: 500;
 }
 .app-footer .demo-note {
-  font-size: 8px;
+  font-size: 12px;
 }
 .welcome-banner {
   background: #e9eee0;
@@ -1069,10 +1094,10 @@ tbody tr:hover {
   margin-bottom: 22px;
 }
 .banner-label {
-  font-size: 7px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 1.8px;
-  color: #7c8b6e;
+  color: #26594c;
 }
 .welcome-banner h2 {
   font-family: var(--serif);
@@ -1086,16 +1111,16 @@ tbody tr:hover {
   color: #688162;
 }
 .welcome-banner p {
-  font-size: 9px;
-  color: #8a967d;
+  font-size: 13px;
+  color: #314f44;
   margin-top: 8px;
 }
 .welcome-banner a {
   display: inline-flex;
   align-items: center;
   gap: 13px;
-  font-size: 10px;
-  color: #57714f;
+  font-size: 13px;
+  color: #1e4f3f;
   margin-top: 17px;
   font-weight: 700;
 }
@@ -1180,7 +1205,7 @@ tbody tr:hover {
   border-bottom: 9px solid #364e35;
 }
 .banner-illustration > small {
-  font-size: 6px;
+  font-size: 11px;
   position: absolute;
   bottom: 3px;
   left: 40px;
@@ -1193,9 +1218,9 @@ tbody tr:hover {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  font-size: 7px;
+  font-size: 12px;
   letter-spacing: 1px;
-  color: #839477;
+  color: #2d5244;
   border-left: 1px solid #cfd9c2;
   padding-left: 28px;
   min-width: 155px;
@@ -1222,11 +1247,11 @@ tbody tr:hover {
 }
 .banner-right > strong span {
   font-family: "Manrope", sans-serif;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1.8;
   letter-spacing: 0;
-  color: #7f9271;
+  color: #2b5042;
 }
 .metrics-grid {
   display: grid;
@@ -1246,8 +1271,8 @@ tbody tr:hover {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  font-size: 10px;
-  color: #84917d;
+  font-size: 13px;
+  color: #2e4f44;
 }
 .metric-icon {
   display: flex;
@@ -1271,11 +1296,11 @@ tbody tr:hover {
   color: #344a38;
 }
 .metric-bottom {
-  font-size: 8px;
+  font-size: 12px;
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #a0a88f;
+  color: #39534b;
   flex-wrap: wrap;
 }
 .metric-bottom > a {
@@ -1296,8 +1321,8 @@ tbody tr:hover {
   padding-bottom: 9px;
 }
 .chart-legend {
-  font-size: 8px;
-  color: #89957f;
+  font-size: 12px;
+  color: #315247;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -1322,8 +1347,8 @@ tbody tr:hover {
   color: #40573f;
 }
 .chart-summary span {
-  font-size: 8px;
-  color: #9ca58e;
+  font-size: 12px;
+  color: #38544b;
 }
 .chart-wrap {
   height: 201px;
@@ -1334,7 +1359,7 @@ tbody tr:hover {
   color: #b2955d;
   padding: 6px 9px;
   border-radius: 5px;
-  font-size: 8px;
+  font-size: 12px;
   white-space: nowrap;
 }
 .approval-list {
@@ -1351,13 +1376,13 @@ tbody tr:hover {
   border: 0;
 }
 .approval-row strong {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
 }
 .approval-row small {
   display: block;
-  font-size: 8px;
-  color: #9aa68e;
+  font-size: 12px;
+  color: #38544b;
   margin-top: 5px;
 }
 .approve-button {
@@ -1380,8 +1405,8 @@ tbody tr:hover {
   justify-content: space-between;
   padding: 15px 24px;
   border-top: 1px solid var(--line);
-  color: #6b8b5f;
-  font-size: 9px;
+  color: #235441;
+  font-size: 13px;
   margin-top: 4px;
 }
 .transactions-panel th {
@@ -1411,7 +1436,7 @@ tbody tr:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #8a9d75;
+  color: #295746;
 }
 .date-block strong {
   font-family: var(--serif);
@@ -1419,7 +1444,7 @@ tbody tr:hover {
   font-weight: 500;
 }
 .date-block span {
-  font-size: 7px;
+  font-size: 12px;
   text-transform: uppercase;
   margin-top: 1px;
 }
@@ -1432,16 +1457,16 @@ tbody tr:hover {
   flex: 1;
 }
 .notice-row small {
-  font-size: 7px;
-  color: #9ba78c;
+  font-size: 12px;
+  color: #375449;
   letter-spacing: 0.3px;
 }
 .notice-row h3 {
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 1.7;
   margin-top: 4px;
-  color: #65795b;
+  color: #214c3b;
 }
 .notice-row > svg {
   color: #b3bea3;
@@ -1451,8 +1476,8 @@ tbody tr:hover {
   justify-content: center;
   align-items: center;
   gap: 9px;
-  font-size: 8px;
-  color: #9eaa8c;
+  font-size: 12px;
+  color: #38544b;
   margin: 22px 0 0;
 }
 .closing-note span {
@@ -1486,11 +1511,11 @@ tbody tr:hover {
   flex: 1;
 }
 .resource-row small {
-  font-size: 9px;
-  color: #93a18a;
+  font-size: 13px;
+  color: #345247;
 }
 .resource-row h3 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   margin-top: 6px;
   line-height: 1.6;
@@ -1505,8 +1530,8 @@ tbody tr:hover {
   display: flex;
   justify-content: space-between;
   margin-bottom: 11px;
-  font-size: 11px;
-  color: #78906c;
+  font-size: 14px;
+  color: #265442;
 }
 .progress-row .progress-track {
   height: 6px;
@@ -1519,19 +1544,19 @@ tbody tr:hover {
   align-items: center;
   gap: 15px;
   margin: 15px 0 24px;
-  color: #8ca17c;
+  color: #24584b;
 }
 .batch-details small {
   display: block;
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 1.1px;
-  color: #9aa98c;
+  color: #38544b;
   margin-bottom: 6px;
 }
 .batch-details strong {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
-  color: #69815b;
+  color: #214c3b;
 }
 /* Student records and attendance */
 .student-table td {
@@ -1540,8 +1565,8 @@ tbody tr:hover {
 }
 .attendance-inline {
   width: 75px;
-  font-size: 10px;
-  color: #7e9270;
+  font-size: 13px;
+  color: #295243;
 }
 .attendance-inline .progress-track {
   margin-top: 5px;
@@ -1559,8 +1584,8 @@ tbody tr:hover {
   font-size: 20px;
 }
 .profile-hero p {
-  font-size: 12px;
-  color: #87967e;
+  font-size: 14px;
+  color: #315044;
   margin: 5px 0 10px;
 }
 .profile-stats {
@@ -1577,12 +1602,12 @@ tbody tr:hover {
   gap: 8px;
 }
 .profile-stats small {
-  font-size: 10px;
-  color: #87977c;
+  font-size: 13px;
+  color: #315044;
 }
 .profile-stats strong {
   font-size: 18px;
-  color: #5b7751;
+  color: #1d4d3c;
 }
 .detail-grid {
   display: grid;
@@ -1591,13 +1616,13 @@ tbody tr:hover {
   margin: 27px 0 0;
 }
 .detail-grid dt {
-  font-size: 10px;
-  color: #929f86;
+  font-size: 13px;
+  color: #355247;
   margin-bottom: 7px;
 }
 .detail-grid dd {
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.8;
   overflow-wrap: anywhere;
 }
@@ -1617,7 +1642,7 @@ tbody tr:hover {
   margin: 0 0 25px;
 }
 .subject-options legend {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   margin-bottom: 12px;
 }
@@ -1625,7 +1650,7 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
+  font-size: 14px;
 }
 .attendance-layout {
   display: grid;
@@ -1642,8 +1667,8 @@ tbody tr:hover {
   padding: 0 0 23px;
 }
 .batch-time {
-  font-size: 11px;
-  color: #9aaa8a;
+  font-size: 14px;
+  color: #375449;
   display: flex;
   align-items: center;
   gap: 7px;
@@ -1669,8 +1694,8 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 12px;
-  color: #8a9c78;
+  font-size: 14px;
+  color: #295746;
 }
 .session-card img {
   margin: 23px 0 18px;
@@ -1678,7 +1703,7 @@ tbody tr:hover {
   border-radius: 6px;
 }
 .session-card .eyebrow {
-  font-size: 8px;
+  font-size: 12px;
 }
 .session-code {
   font-size: 28px;
@@ -1687,17 +1712,17 @@ tbody tr:hover {
   padding: 12px 0;
 }
 .session-card p {
-  font-size: 10px;
+  font-size: 13px;
   text-align: center;
   line-height: 1.8;
-  color: #92a083;
+  color: #355247;
   margin-bottom: 16px;
 }
 .session-card.expired img {
   opacity: 0.3;
 }
 .session-card .button {
-  font-size: 10px;
+  font-size: 13px;
 }
 .attendance-totals {
   display: flex;
@@ -1716,8 +1741,8 @@ tbody tr:hover {
   font-weight: 500;
 }
 .attendance-totals span {
-  font-size: 9px;
-  color: #92a083;
+  font-size: 13px;
+  color: #355247;
 }
 .segmented {
   display: flex;
@@ -1728,7 +1753,7 @@ tbody tr:hover {
 }
 .segmented button {
   padding: 7px 12px;
-  font-size: 10px;
+  font-size: 13px;
   color: #8b9c79;
   border-radius: 4px;
 }
@@ -1746,15 +1771,15 @@ tbody tr:hover {
   letter-spacing: -0.7px;
 }
 .checkin-panel > p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.8;
   color: #8b9b7d;
   margin-bottom: 25px;
 }
 .checkin-panel > small {
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.7;
-  color: #92a382;
+  color: #355247;
   display: block;
   margin-top: 20px;
 }
@@ -1778,8 +1803,8 @@ tbody tr:hover {
   font-size: 25px;
 }
 .attendance-score p {
-  font-size: 11px;
-  color: #91a27e;
+  font-size: 14px;
+  color: #335246;
   margin-top: 8px;
 }
 /* Fees, resources and notices */
@@ -1806,8 +1831,8 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 9px;
-  color: #8d9c80;
+  font-size: 13px;
+  color: #2f5446;
 }
 .donut-legend i {
   width: 6px;
@@ -1839,8 +1864,8 @@ tbody tr:hover {
   margin-top: 13px;
 }
 .fee-callout p {
-  font-size: 12px;
-  color: #8b9c7b;
+  font-size: 14px;
+  color: #2e5445;
   line-height: 1.8;
   margin-top: 8px;
 }
@@ -1868,8 +1893,8 @@ tbody tr:hover {
   margin-top: 10px;
 }
 .receipt > p:not(.eyebrow) {
-  font-size: 12px;
-  color: #8b9d7c;
+  font-size: 14px;
+  color: #285446;
   margin: 8px 0 25px;
 }
 .receipt dl {
@@ -1881,17 +1906,17 @@ tbody tr:hover {
   justify-content: space-between;
   gap: 16px;
   margin: 15px 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 .receipt dt {
-  color: #91a27e;
+  color: #335246;
 }
 .receipt dd {
   margin: 0;
 }
 .receipt > small {
-  font-size: 9px;
-  color: #a0ad92;
+  font-size: 13px;
+  color: #3d594f;
 }
 .library-banner {
   background: #eaf0e2;
@@ -1911,15 +1936,15 @@ tbody tr:hover {
   letter-spacing: -0.7px;
 }
 .library-banner p {
-  font-size: 11px;
-  color: #8da17e;
+  font-size: 14px;
+  color: #2e5446;
   margin-top: 8px;
 }
 .library-banner > span {
   margin-left: auto;
   font-family: var(--serif);
   font-size: 32px;
-  color: #749361;
+  color: #24543f;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1927,7 +1952,7 @@ tbody tr:hover {
 }
 .library-banner > span small {
   font-family: Manrope, sans-serif;
-  font-size: 7px;
+  font-size: 12px;
   letter-spacing: 1px;
 }
 .library-toolbar {
@@ -1954,14 +1979,14 @@ tbody tr:hover {
   padding: 23px;
   background: #e7ede0;
   overflow: hidden;
-  color: #79916d;
+  color: #275242;
 }
 .material-cover > div {
   position: relative;
   z-index: 1;
 }
 .material-cover span:not(.badge) {
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 1.1px;
 }
 .material-cover strong {
@@ -1985,14 +2010,14 @@ tbody tr:hover {
   position: absolute;
   bottom: 22px;
   left: 23px;
-  font-size: 7px;
+  font-size: 12px;
   letter-spacing: 1px;
 }
 .material-cover .badge {
   position: absolute;
   top: 19px;
   right: 17px;
-  font-size: 7px;
+  font-size: 12px;
   background: #ffffff90;
 }
 .cover-1 {
@@ -2018,8 +2043,8 @@ tbody tr:hover {
   flex-wrap: wrap;
   align-items: center;
   gap: 6px;
-  font-size: 8px;
-  color: #9ca78f;
+  font-size: 12px;
+  color: #38544b;
   line-height: 1.8;
 }
 .material-body h2 {
@@ -2031,8 +2056,8 @@ tbody tr:hover {
   letter-spacing: -0.5px;
 }
 .material-body > p {
-  font-size: 11px;
-  color: #8c9b7d;
+  font-size: 14px;
+  color: #315446;
   line-height: 1.9;
   flex: 1;
   margin-bottom: 18px;
@@ -2052,8 +2077,8 @@ tbody tr:hover {
   padding-top: 12px;
 }
 .material-admin > .text-button {
-  font-size: 9px;
-  color: #8f9c80;
+  font-size: 13px;
+  color: #2f5446;
 }
 .material-admin > div {
   display: flex;
@@ -2068,27 +2093,27 @@ tbody tr:hover {
   background: #f4f7ed;
   border: 1px dashed #cbd9bb;
   border-radius: 8px;
-  color: #8ca078;
+  color: #2b5444;
   cursor: pointer;
   text-align: center;
 }
 .upload-zone strong {
-  font-size: 12px;
+  font-size: 14px;
   overflow-wrap: anywhere;
   max-width: 100%;
 }
 .upload-zone small {
-  font-size: 9px;
+  font-size: 13px;
 }
 .upload-zone input {
-  font-size: 10px;
+  font-size: 13px;
   padding: 7px;
 }
 .note-preview {
   white-space: pre-wrap;
   font-family: Manrope, sans-serif;
   line-height: 2;
-  font-size: 13px;
+  font-size: 15px;
   background: #f4f7ec;
   padding: 25px;
   border-radius: 8px;
@@ -2122,7 +2147,7 @@ tbody tr:hover {
   width: 54px;
   height: 54px;
   background: #eef3e8;
-  color: #88a275;
+  color: #275441;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -2142,8 +2167,8 @@ tbody tr:hover {
   gap: 10px;
 }
 .announcement-meta > span:not(.badge) {
-  font-size: 9px;
-  color: #9aa88c;
+  font-size: 13px;
+  color: #375048;
 }
 .announcement-copy h2 {
   font-family: var(--serif);
@@ -2154,9 +2179,9 @@ tbody tr:hover {
   letter-spacing: -0.5px;
 }
 .announcement-copy > p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.9;
-  color: #889a78;
+  color: #2e5244;
   max-width: 650px;
 }
 .announcement-date {
@@ -2164,14 +2189,14 @@ tbody tr:hover {
   align-items: center;
   flex-wrap: wrap;
   gap: 7px;
-  font-size: 10px;
-  color: #8ca57a;
+  font-size: 13px;
+  color: #295442;
   margin-top: 22px;
 }
 .announcement-date > span {
   margin-left: 12px;
-  color: #a7b19c;
-  font-size: 9px;
+  color: #3e594f;
+  font-size: 13px;
 }
 .announcement-admin {
   display: flex;
@@ -2179,7 +2204,7 @@ tbody tr:hover {
   gap: 5px;
 }
 .announcement-admin .small-button {
-  font-size: 8px;
+  font-size: 12px;
 }
 .report-tabs {
   padding: 0;
@@ -2219,41 +2244,41 @@ tbody tr:hover {
 .settings-batch strong {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 .settings-batch strong span {
-  font-size: 9px;
-  color: #99a88a;
+  font-size: 13px;
+  color: #375449;
   font-weight: 400;
 }
 .settings-batch p {
-  font-size: 10px;
-  color: #95a486;
+  font-size: 13px;
+  color: #355247;
   margin: 8px 0;
 }
 .settings-batch small {
   display: flex;
   gap: 6px;
   align-items: center;
-  font-size: 10px;
-  color: #9aaa8a;
+  font-size: 13px;
+  color: #375449;
 }
 .demo-settings {
   margin-top: 24px;
   padding: 25px;
-  color: #8ea67a;
+  color: #295442;
 }
 .demo-settings h2 {
   font-family: var(--serif);
   font-size: 21px;
   font-weight: 500;
-  color: #5e7c4d;
+  color: #1f4f3c;
   margin: 15px 0;
 }
 .demo-settings p {
-  font-size: 11px;
-  color: #9bab8c;
+  font-size: 14px;
+  color: #375449;
   line-height: 1.9;
   margin-bottom: 14px;
 }
@@ -2274,7 +2299,7 @@ tbody tr:hover {
 }
 .not-found p {
   font-size: 14px;
-  color: #94a484;
+  color: #355247;
   margin-bottom: 25px;
 }
 /* Public website */
@@ -2293,19 +2318,21 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   gap: 28px;
-  font-size: 11px;
-  color: #778270;
+  font-size: 14px;
+  font-weight: 600;
+  color: #233f37;
 }
 .landing-nav .admin-link {
   display: flex;
   align-items: center;
   gap: 4px;
-  font-size: 10px;
+  font-size: 13.5px;
   margin-left: 15px;
-  color: #849279;
+  color: #1f5c50;
+  font-weight: 600;
 }
 .landing-nav .button {
-  font-size: 10px;
+  font-size: 13px;
 }
 .mobile-menu {
   display: none;
@@ -2320,8 +2347,8 @@ tbody tr:hover {
   padding: 58px 6% 79px;
 }
 .hero-copy > .eyebrow {
-  font-size: 8px;
-  color: #8a9b78;
+  font-size: 12px;
+  color: #26594c;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -2342,17 +2369,18 @@ tbody tr:hover {
   margin: 22px 0;
 }
 .hero h1 em {
-  color: #69866a;
+  color: #225442;
 }
 .hero h1 > span {
   color: #c6a16b;
 }
 .hero-copy > p {
-  color: #84917e;
-  font-size: 13px;
-  line-height: 1.95;
-  max-width: 385px;
+  color: #2d453d;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 440px;
   margin: 24px 0 29px;
+  font-weight: 500;
 }
 .hero-buttons {
   display: flex;
@@ -2361,25 +2389,27 @@ tbody tr:hover {
   flex-wrap: wrap;
 }
 .hero-buttons .button {
-  font-size: 10px;
+  font-size: 13px;
   padding: 14px 16px;
 }
 .hero-buttons .text-link {
-  font-size: 9px;
+  font-size: 13px;
 }
 .hero-footnote {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-top: 36px;
-  color: #7c8c71;
-  font-size: 10px;
+  color: #24473b;
+  font-size: 14px;
+  font-weight: 600;
 }
 .hero-footnote small {
   display: block;
-  font-size: 8px;
-  color: #a4ae96;
-  margin-top: 5px;
+  font-size: 12px;
+  color: #3f5950;
+  margin-top: 4px;
+  font-weight: 500;
 }
 .mini-seal {
   width: 35px;
@@ -2406,12 +2436,12 @@ tbody tr:hover {
   right: 40px;
   display: flex;
   justify-content: space-between;
-  font-size: 6px;
-  color: #8d9c7c;
+  font-size: 11px;
+  color: #2f5446;
   letter-spacing: 1.6px;
 }
 .art-top > span:last-child {
-  font-size: 5px;
+  font-size: 11px;
 }
 .orbital {
   position: absolute;
@@ -2445,7 +2475,7 @@ tbody tr:hover {
   top: 163px;
   left: 24px;
   font-size: 36px;
-  color: #a9bc91;
+  color: #3d594c;
 }
 .book-illustration {
   display: flex;
@@ -2476,9 +2506,9 @@ tbody tr:hover {
   border-bottom: 2px solid #e2e5cf;
 }
 .book-page small {
-  font-size: 6px;
+  font-size: 11px;
   letter-spacing: 1.5px;
-  color: #a1ab8e;
+  color: #3a574a;
   white-space: nowrap;
 }
 .book-page strong {
@@ -2489,7 +2519,7 @@ tbody tr:hover {
   line-height: 1.35;
   letter-spacing: -1.2px;
   margin-top: 19px;
-  color: #668063;
+  color: #224e3e;
 }
 .book-page strong em {
   color: #b9a46b;
@@ -2504,7 +2534,7 @@ tbody tr:hover {
   position: absolute;
   bottom: 23px;
   left: 20px;
-  font-size: 5px;
+  font-size: 11px;
   letter-spacing: 1.3px;
 }
 .ink-line {
@@ -2558,19 +2588,19 @@ tbody tr:hover {
   bottom: 96px;
   left: 52%;
   transform: rotate(-38deg);
-  background: #8fa97d;
+  background: #2a5444;
 }
 .leaf-3 {
   bottom: 76px;
   left: 27%;
   transform: rotate(26deg);
-  background: #93a97e;
+  background: #2d5445;
 }
 .leaf-4 {
   bottom: 54px;
   left: 52%;
   transform: rotate(-25deg);
-  background: #b6c49b;
+  background: #456350;
 }
 .art-bottom {
   position: absolute;
@@ -2580,14 +2610,14 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #9aa789;
-  font-size: 8px;
+  color: #385448;
+  font-size: 12px;
   line-height: 1.7;
 }
 .handwritten {
   font-family: var(--serif);
   font-size: 17px;
-  color: #8ca277;
+  color: #285441;
 }
 .art-tag {
   position: absolute;
@@ -2601,15 +2631,15 @@ tbody tr:hover {
   border: 1px solid #e7eadb;
   border-radius: 7px;
   box-shadow: 0 10px 25px #5665360c;
-  font-size: 8px;
-  color: #a0a78e;
+  font-size: 12px;
+  color: #3a544a;
   transform: rotate(4deg);
 }
 .art-tag strong {
   display: block;
-  font-size: 10px;
+  font-size: 13px;
   margin-top: 5px;
-  color: #718366;
+  color: #274e3d;
   font-weight: 600;
 }
 .tag-icon {
@@ -2631,13 +2661,13 @@ tbody tr:hover {
   background: #f2f3e9;
   border-top: 1px solid #e8eadc;
   border-bottom: 1px solid #e8eadc;
-  color: #839274;
+  color: #2d4f40;
 }
 .subject-strip > span {
-  font-size: 7px;
+  font-size: 12px;
   letter-spacing: 1.6px;
   margin-right: 15px;
-  color: #a8b099;
+  color: #3d574c;
 }
 .subject-strip b {
   font-family: var(--serif);
@@ -2647,7 +2677,7 @@ tbody tr:hover {
 .subject-strip i {
   font-style: normal;
   color: #c2b38b;
-  font-size: 12px;
+  font-size: 14px;
 }
 .section {
   padding: 91px 6%;
@@ -2660,16 +2690,16 @@ tbody tr:hover {
   line-height: 1.4;
   letter-spacing: -1.5px;
   font-weight: 400;
-  color: #3c5440;
+  color: #163828;
   margin: 17px 0;
 }
 .section h2 em {
-  color: #8aa179;
+  color: #255946;
 }
 .section p {
-  font-size: 12px;
-  color: #99a68b;
-  line-height: 2;
+  font-size: 15px;
+  color: #2e473f;
+  line-height: 1.85;
 }
 .approach {
   display: grid;
@@ -2698,7 +2728,7 @@ tbody tr:hover {
 .approach-number {
   font-family: var(--serif);
   font-size: 20px;
-  color: #c1c8ac;
+  color: #506958;
 }
 .approach-items article > div {
   position: relative;
@@ -2708,15 +2738,16 @@ tbody tr:hover {
   display: none;
 }
 .approach-items h3 {
-  font-size: 14px;
-  font-weight: 600;
-  color: #687f5d;
-  margin-bottom: 9px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a4234;
+  margin-bottom: 8px;
 }
 .approach-items p {
-  font-size: 11px;
-  line-height: 1.9;
-  max-width: 350px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #2e473f;
+  max-width: 380px;
 }
 .programmes {
   background: #f2f4e9;
@@ -2754,31 +2785,33 @@ tbody tr:hover {
   transform: translateY(-5px);
 }
 .programme-grid a > span {
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 1.5px;
-  color: #a6b396;
+  font-weight: 700;
+  color: #274f41;
 }
 .programme-number {
   font-family: var(--serif);
   font-size: 53px;
-  color: #c0cbaa;
+  color: #536e5b;
   font-style: italic;
   margin: 23px 0 20px;
 }
 .programme-grid h3 {
   font-family: var(--serif);
-  font-size: 21px;
-  font-weight: 400;
-  color: #627c55;
+  font-size: 22px;
+  font-weight: 600;
+  color: #194435;
   letter-spacing: -0.5px;
 }
 .programme-grid p {
-  font-size: 10px;
-  line-height: 1.9;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #334d44;
   margin: 10px 0 35px;
 }
 .programme-grid svg {
-  color: #9aac80;
+  color: #335745;
 }
 .contact-section {
   background: #263e37;
@@ -2789,20 +2822,24 @@ tbody tr:hover {
   gap: 40px;
 }
 .contact-section .eyebrow {
-  color: #8ca17c;
+  color: #edd69f;
 }
 .contact-section h2 {
   color: #f4f2e3;
 }
 .contact-section h2 em {
-  color: #c6c89d;
+  color: #fce09c;
 }
 .contact-section p {
-  color: #9ead8d;
+  color: #dce7df;
+  font-size: 16px;
+  line-height: 1.8;
 }
 .contact-section .button {
   margin-top: 27px;
-  font-size: 10px;
+  font-size: 14px;
+  padding: 13px 20px;
+  font-weight: 600;
 }
 .contact-details {
   display: flex;
@@ -2814,17 +2851,18 @@ tbody tr:hover {
 .contact-details > span {
   display: flex;
   gap: 14px;
-  font-size: 12px;
-  color: #b2bba0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #e5eee7;
 }
 .contact-details svg {
-  width: 18px;
-  height: 18px;
-  color: #c2be8b;
+  width: 20px;
+  height: 20px;
+  color: #edd69f;
 }
 .contact-details small {
-  font-size: 8px;
-  color: #809274;
+  font-size: 13px;
+  color: #c4d7cc;
 }
 .landing-footer {
   display: flex;
@@ -2835,15 +2873,18 @@ tbody tr:hover {
 }
 .landing-footer > span {
   font-family: var(--serif);
-  font-size: 13px;
-  color: #9dab8d;
+  font-size: 15px;
+  font-weight: 500;
+  color: #27483e;
   font-style: italic;
 }
 .landing-footer .brand strong {
-  font-size: 20px;
+  font-size: 22px;
 }
 .landing-footer .demo-note {
-  font-size: 8px;
+  font-size: 13px;
+  color: #27483e;
+  font-weight: 500;
 }
 /* A welcoming entry */
 .auth-page {
@@ -2860,7 +2901,8 @@ tbody tr:hover {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .auth-story:after {
   content: "";
@@ -2884,8 +2926,8 @@ tbody tr:hover {
   font-size: 27px;
 }
 .auth-story .eyebrow {
-  font-size: 7px;
-  color: #a7b28d;
+  font-size: 12px;
+  color: #e2ece5;
   letter-spacing: 1.5px;
 }
 .auth-story h1 {
@@ -2898,18 +2940,18 @@ tbody tr:hover {
   margin: 25px 0;
 }
 .auth-story h1 em {
-  color: #bac197;
+  color: #fce09c;
 }
 .auth-story p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 2;
-  color: #9fac8c;
+  color: #dce7df;
   max-width: 290px;
 }
 .auth-story > small {
-  font-size: 7px;
+  font-size: 12px;
   letter-spacing: 1.3px;
-  color: #8b9e78;
+  color: #c8d9ce;
 }
 .auth-main {
   padding: 39px 10%;
@@ -2917,8 +2959,8 @@ tbody tr:hover {
   flex-direction: column;
 }
 .back-link {
-  font-size: 10px;
-  color: #91a17f;
+  font-size: 13px;
+  color: #315245;
   align-self: flex-end;
 }
 .auth-form {
@@ -2933,93 +2975,118 @@ tbody tr:hover {
   justify-content: center;
   width: 56px;
   height: 56px;
-  border: 1px solid #e1e7d3;
-  background: #f1f4e6;
-  color: #8da076;
+  border: 1px solid #ccd8c5;
+  background: #eff3e7;
+  color: #1f5c50;
   border-radius: 12px;
   margin-bottom: 23px;
 }
 .auth-form .eyebrow {
-  font-size: 8px;
-  color: #9baa87;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+  color: #235649;
 }
 .auth-form h2 {
   font-family: var(--serif);
-  font-size: 41px;
+  font-size: 42px;
   font-weight: 400;
   letter-spacing: -1.8px;
   margin: 12px 0;
 }
 .auth-form h2 > span {
-  color: #b9a274;
+  color: #a67218;
 }
 .auth-form > p {
-  font-size: 11px;
-  color: #9aa88c;
+  font-size: 15px;
+  color: #2e473f;
   margin-bottom: 30px;
 }
 .auth-form .field {
   margin-bottom: 20px;
 }
 .auth-form .field > span {
-  font-size: 10px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #1e3630;
 }
 .auth-form input {
-  padding: 13px 12px;
-  font-size: 12px;
+  padding: 13px 14px;
+  font-size: 14.5px;
+  font-weight: 500;
   background: #fffefa;
+  border-color: #cbd5c6;
 }
 .auth-form .button {
-  padding: 13px;
+  padding: 14px;
   margin-top: 5px;
-  font-size: 11px;
+  font-size: 14.5px;
+  font-weight: 600;
 }
 .password-field {
   position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 .password-field input {
-  padding-right: 42px;
+  padding-right: 44px;
+  width: 100%;
 }
 .password-field button {
   position: absolute;
   right: 12px;
   top: 50%;
   transform: translateY(-50%);
-  display: flex;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
   padding: 0;
-  color: #9aab86;
+  border: 0;
+  background: transparent;
+  color: #2e5246;
+  cursor: pointer;
+  z-index: 2;
+}
+.password-field button:hover {
+  color: #143026;
 }
 .demo-credentials {
-  border: 1px solid #e6eadb;
-  background: #f4f6eb;
-  border-radius: 7px;
-  padding: 16px;
+  border: 1px solid #dbe2d4;
+  background: #f1f4e7;
+  border-radius: 8px;
+  padding: 18px;
   margin-top: 25px;
 }
 .demo-credentials strong {
-  font-size: 10px;
-  color: #7c9268;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #1a4d3e;
 }
 .demo-credentials p {
-  font-size: 9px;
-  line-height: 1.8;
-  color: #98a885;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #2b453e;
   margin: 8px 0;
 }
 .demo-credentials code {
   font-family: Manrope, sans-serif;
-  font-size: 8px;
-  color: #94a47e;
+  font-size: 13px;
+  font-weight: 600;
+  color: #184739;
   overflow-wrap: anywhere;
 }
 .auth-form > .auth-switch {
-  font-size: 9px;
+  font-size: 13.5px;
   text-align: center;
   margin: 22px 0 0;
-  color: #a5b292;
+  color: #2b473e;
 }
 .auth-switch a {
-  color: #819b69;
+  color: #1a5e4f;
+  font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
   display: inline-flex;
@@ -3039,7 +3106,7 @@ tbody tr:hover {
   padding: 29px 30px;
 }
 .register-page > header > .text-link {
-  font-size: 10px;
+  font-size: 13px;
 }
 .register-page > main {
   max-width: 740px;
@@ -3055,12 +3122,12 @@ tbody tr:hover {
   margin: 12px 0 20px;
 }
 .register-page h1 em {
-  color: #97ad7b;
+  color: #2d5744;
 }
 .register-intro {
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.9;
-  color: #9aaa87;
+  color: #355447;
   margin-bottom: 30px;
 }
 .registration-panel {
@@ -3081,20 +3148,20 @@ tbody tr:hover {
   width: 75px;
   height: 75px;
   background: #eaf2df;
-  color: #86a16d;
+  color: #24543d;
   border-radius: 50%;
   margin: 0 auto 25px;
 }
 .registration-success > p {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.9;
-  color: #94a681;
+  color: #335445;
   max-width: 450px;
   margin: 20px auto 30px;
 }
 /* Keep supporting copy readable against the warm, light surfaces. */
 .sidebar nav a {
-  font-size: 12px;
+  font-size: 14px;
 }
 .panel-head p,
 .page-head p,
@@ -3108,32 +3175,32 @@ td small,
 .helper-text,
 .field small,
 .detail-grid dt {
-  color: #738170;
+  color: #2f4840;
 }
 .metric-bottom {
-  color: #77846e;
-  font-size: 9px;
+  color: #2b4f40;
+  font-size: 13px;
   line-height: 1.6;
 }
 .metric-bottom .green-text {
   color: #497457 !important;
 }
 .panel-head p {
-  font-size: 11px;
+  font-size: 14px;
 }
 .approval-row strong,
 td strong {
-  font-size: 12px;
+  font-size: 14px;
 }
 table {
-  font-size: 12px;
+  font-size: 14px;
 }
 th {
-  font-size: 9px;
-  color: #73816f;
+  font-size: 13px;
+  color: #2e473f;
 }
 .badge {
-  font-size: 10px;
+  font-size: 13px;
 }
 .hero-copy > p,
 .section p,
@@ -3144,19 +3211,19 @@ th {
 .announcement-copy > p,
 .fee-callout p,
 .checkin-panel > p {
-  color: #6d7e6c;
+  color: #2d453d;
 }
 .contact-section p {
-  color: #b3c0a5;
+  color: #dbe8df;
 }
 .hero-footnote,
 .landing-nav nav {
-  color: #657661;
+  color: #25453b;
 }
 .demo-credentials p,
 .demo-credentials code,
 .auth-form > .auth-switch {
-  color: #73846a;
+  color: #314b43;
 }
 /* Responsive, from a pocket to a workspace */
 @media (min-width: 1600px) {
@@ -3208,7 +3275,7 @@ th {
     font-size: 20px;
   }
   .brand.small small {
-    font-size: 6px;
+    font-size: 11px;
   }
   .workspace-main {
     padding: 26px 24px 16px;
@@ -3235,11 +3302,11 @@ th {
     font-size: 24px;
   }
   .metric-bottom {
-    font-size: 7px;
+    font-size: 12px;
     gap: 4px;
   }
   .metric-top {
-    font-size: 9px;
+    font-size: 13px;
   }
   .dashboard-grid {
     grid-template-columns: 1.4fr 1fr;
@@ -3252,7 +3319,7 @@ th {
     font-size: 16px;
   }
   .panel-head p {
-    font-size: 9px;
+    font-size: 13px;
   }
   .chart-legend {
     display: none;
@@ -3263,7 +3330,7 @@ th {
     padding-right: 15px;
   }
   .transactions-panel td {
-    font-size: 10px;
+    font-size: 13px;
   }
   .transactions-panel .avatar {
     display: none;
@@ -3272,17 +3339,17 @@ th {
     padding: 0 18px;
   }
   .approval-row strong {
-    font-size: 10px;
+    font-size: 13px;
   }
   .approval-row small {
-    font-size: 7px;
+    font-size: 12px;
   }
   .notice-row {
     padding: 14px 18px;
     gap: 10px;
   }
   .notice-row h3 {
-    font-size: 9px;
+    font-size: 13px;
   }
   .app-footer {
     padding: 22px 24px;
@@ -3308,24 +3375,24 @@ th {
   }
   .right-page small {
     left: 11px;
-    font-size: 4px;
+    font-size: 11px;
   }
   .hero-buttons {
     gap: 16px;
   }
   .hero-buttons .button {
-    font-size: 9px;
+    font-size: 13px;
     padding: 13px;
   }
   .hero-buttons .text-link {
-    font-size: 8px;
+    font-size: 12px;
   }
   .hero-copy > p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .landing-nav nav {
     gap: 21px;
-    font-size: 10px;
+    font-size: 13px;
   }
   .landing-nav .admin-link {
     margin: 0;
@@ -3334,7 +3401,7 @@ th {
     gap: 30px;
   }
   .subject-strip > span {
-    font-size: 6px;
+    font-size: 11px;
   }
   .section h2 {
     font-size: 34px;
@@ -3448,7 +3515,7 @@ th {
     display: none;
   }
   .landing-nav .admin-link {
-    font-size: 9px;
+    font-size: 13px;
   }
   .hero {
     padding: 40px 5% 65px;
@@ -3458,7 +3525,7 @@ th {
     font-size: 52px;
   }
   .hero-copy > .eyebrow {
-    font-size: 6px;
+    font-size: 11px;
     letter-spacing: 1px;
   }
   .hero-art {
@@ -3469,7 +3536,7 @@ th {
     left: 25px;
     right: 25px;
     top: 43px;
-    font-size: 5px;
+    font-size: 11px;
     letter-spacing: 1px;
   }
   .book-illustration {
@@ -3482,13 +3549,13 @@ th {
     font-size: 24px;
   }
   .book-page small {
-    font-size: 5px;
+    font-size: 11px;
   }
   .book-page {
     padding: 25px 15px;
   }
   .right-page small {
-    font-size: 4px;
+    font-size: 11px;
     letter-spacing: 0.8px;
     left: 10px;
   }
@@ -3532,23 +3599,23 @@ th {
     padding: 12px 14px;
   }
   .art-tag strong {
-    font-size: 8px;
+    font-size: 12px;
   }
   .art-tag > div {
-    font-size: 7px;
+    font-size: 12px;
   }
   .art-bottom {
-    font-size: 7px;
+    font-size: 12px;
   }
   .handwritten {
-    font-size: 13px;
+    font-size: 15px;
   }
   .hero-buttons {
     gap: 15px;
   }
   .hero-footnote {
     margin-top: 25px;
-    font-size: 9px;
+    font-size: 13px;
   }
   .subject-strip {
     gap: 22px;
@@ -3578,18 +3645,18 @@ th {
     font-size: 16px;
   }
   .programme-grid p {
-    font-size: 9px;
+    font-size: 13px;
   }
   .contact-details {
     padding: 0;
   }
   .contact-details > a,
   .contact-details > span {
-    font-size: 10px;
+    font-size: 13px;
     gap: 9px;
   }
   .contact-section p {
-    font-size: 10px;
+    font-size: 13px;
   }
   .landing-footer {
     padding: 26px 5%;
@@ -3601,10 +3668,10 @@ th {
     font-size: 48px;
   }
   .auth-story .eyebrow {
-    font-size: 6px;
+    font-size: 11px;
   }
   .auth-story p {
-    font-size: 11px;
+    font-size: 14px;
   }
   .auth-main {
     padding: 35px 10%;
@@ -3650,18 +3717,18 @@ th {
     letter-spacing: -1px;
   }
   .page-head p {
-    font-size: 10px;
+    font-size: 13px;
     max-width: 380px;
   }
   .page-head .eyebrow {
-    font-size: 7px;
+    font-size: 12px;
   }
   .page-actions {
     gap: 9px;
     flex-wrap: wrap;
   }
   .page-actions .button {
-    font-size: 10px;
+    font-size: 13px;
     padding: 10px 13px;
   }
   .welcome-banner {
@@ -3699,10 +3766,10 @@ th {
     font-size: 27px;
   }
   .metric-bottom {
-    font-size: 8px;
+    font-size: 12px;
   }
   .metric-top {
-    font-size: 10px;
+    font-size: 13px;
   }
   .dashboard-grid {
     grid-template-columns: 1fr;
@@ -3712,7 +3779,7 @@ th {
     font-size: 19px;
   }
   .panel-head p {
-    font-size: 10px;
+    font-size: 13px;
   }
   .chart-legend {
     display: flex;
@@ -3727,16 +3794,16 @@ th {
     font-size: 24px;
   }
   .chart-summary span {
-    font-size: 9px;
+    font-size: 13px;
   }
   .approval-row {
     padding: 15px 0;
   }
   .approval-row strong {
-    font-size: 12px;
+    font-size: 14px;
   }
   .approval-row small {
-    font-size: 9px;
+    font-size: 13px;
   }
   .approval-list {
     padding: 0 20px;
@@ -3745,16 +3812,16 @@ th {
     padding-bottom: 8px;
   }
   .panel-footer-link {
-    font-size: 10px;
+    font-size: 13px;
   }
   .notice-row {
     padding: 17px 20px;
   }
   .notice-row h3 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .notice-row small {
-    font-size: 8px;
+    font-size: 12px;
   }
   .date-block {
     width: 41px;
@@ -3764,7 +3831,7 @@ th {
     font-size: 18px;
   }
   .date-block span {
-    font-size: 8px;
+    font-size: 12px;
   }
   .transactions-panel th,
   .transactions-panel td {
@@ -3774,21 +3841,21 @@ th {
     display: flex;
   }
   .transactions-panel td {
-    font-size: 11px;
+    font-size: 14px;
   }
   .app-footer {
     padding: 20px 18px;
     flex-direction: column;
     align-items: center;
     gap: 9px;
-    font-size: 9px;
+    font-size: 13px;
     margin-top: 0;
   }
   .app-footer .demo-note {
-    font-size: 7px;
+    font-size: 12px;
   }
   .closing-note {
-    font-size: 8px;
+    font-size: 12px;
   }
   .student-banner .banner-illustration {
     margin-right: 0;
@@ -3814,7 +3881,7 @@ th {
     flex-direction: column;
     gap: 5px;
     color: #9bab8a;
-    font-size: 8px;
+    font-size: 12px;
     padding: 8px 12px;
   }
   .bottom-nav a.active {
@@ -3830,7 +3897,7 @@ th {
     padding: 14px 12px;
   }
   .student-metrics .metric-top {
-    font-size: 8px;
+    font-size: 12px;
   }
   .student-metrics .metric-icon {
     display: none;
@@ -3840,7 +3907,7 @@ th {
     margin-top: 13px;
   }
   .student-metrics .metric-bottom {
-    font-size: 7px;
+    font-size: 12px;
     line-height: 1.7;
     display: block;
   }
@@ -3869,7 +3936,7 @@ th {
     padding: 14px 17px;
   }
   .table-footer {
-    font-size: 9px;
+    font-size: 13px;
     padding: 15px 17px;
   }
   .table-footer span {
@@ -3891,7 +3958,7 @@ th {
     font-size: 25px;
   }
   .summary-strip span {
-    font-size: 9px;
+    font-size: 13px;
   }
   .attendance-layout {
     grid-template-columns: 1fr;
@@ -3940,10 +4007,10 @@ th {
     font-size: 23px;
   }
   .fee-callout p {
-    font-size: 11px;
+    font-size: 14px;
   }
   .fee-callout .button {
-    font-size: 11px;
+    font-size: 14px;
   }
   .library-banner {
     padding: 22px;
@@ -3958,14 +4025,14 @@ th {
     line-height: 1.5;
   }
   .library-banner p {
-    font-size: 10px;
+    font-size: 13px;
     line-height: 1.8;
   }
   .library-banner > span {
     font-size: 27px;
   }
   .library-banner > span small {
-    font-size: 6px;
+    font-size: 11px;
   }
   .library-toolbar {
     padding: 23px 0;
@@ -3980,7 +4047,7 @@ th {
     font-size: 19px;
   }
   .material-body > p {
-    font-size: 10px;
+    font-size: 13px;
   }
   .material-cover {
     height: 145px;
@@ -3992,25 +4059,25 @@ th {
   .material-cover > small {
     bottom: 18px;
     left: 18px;
-    font-size: 6px;
+    font-size: 11px;
   }
   .material-cover > div > span {
-    font-size: 7px;
+    font-size: 12px;
   }
   .material-cover .badge {
     top: 15px;
     right: 12px;
-    font-size: 6px;
+    font-size: 11px;
     padding: 4px 6px;
   }
   .material-cover .cover-symbol {
     font-size: 90px !important;
   }
   .resource-meta {
-    font-size: 7px;
+    font-size: 12px;
   }
   .material-actions .text-button {
-    font-size: 9px;
+    font-size: 13px;
   }
   .announcement-card {
     padding: 22px;
@@ -4032,7 +4099,7 @@ th {
     font-size: 22px;
   }
   .announcement-copy > p {
-    font-size: 11px;
+    font-size: 14px;
   }
   .announcement-meta {
     gap: 7px;
@@ -4046,15 +4113,15 @@ th {
   }
   .announcement-admin .small-button {
     margin-right: auto;
-    font-size: 9px;
+    font-size: 13px;
   }
   .announcement-date {
-    font-size: 9px;
+    font-size: 13px;
   }
   .announcement-date > span {
     width: 100%;
     margin: 4px 0 0 22px;
-    font-size: 8px;
+    font-size: 12px;
   }
   .settings-grid {
     grid-template-columns: 1fr;
@@ -4075,7 +4142,7 @@ th {
     gap: 23px;
   }
   .report-tabs button {
-    font-size: 10px;
+    font-size: 13px;
   }
   .profile-stats {
     grid-template-columns: 1fr 1fr;
@@ -4091,7 +4158,7 @@ th {
     gap: 20px 16px;
   }
   .detail-grid dd {
-    font-size: 11px;
+    font-size: 14px;
   }
   .modal-backdrop {
     padding: 15px;
@@ -4108,7 +4175,7 @@ th {
   }
   .toast {
     bottom: 80px;
-    font-size: 11px;
+    font-size: 14px;
   }
   .landing-nav {
     padding: 24px 6%;
@@ -4132,7 +4199,7 @@ th {
     box-shadow: 0 15px 30px #253d2820;
     padding: 20px;
     align-items: stretch;
-    font-size: 12px;
+    font-size: 14px;
     gap: 20px;
   }
   .landing-nav nav.open {
@@ -4143,10 +4210,10 @@ th {
     display: block;
   }
   .landing-nav .admin-link {
-    font-size: 12px;
+    font-size: 14px;
   }
   .landing-nav .button {
-    font-size: 12px;
+    font-size: 14px;
   }
   .hero {
     grid-template-columns: 1fr;
@@ -4157,7 +4224,7 @@ th {
     max-width: 500px;
   }
   .hero-copy > .eyebrow {
-    font-size: 7px;
+    font-size: 12px;
     letter-spacing: 1.1px;
   }
   .hero h1 {
@@ -4167,23 +4234,23 @@ th {
     margin: 22px 0;
   }
   .hero-copy > p {
-    font-size: 13px;
+    font-size: 15px;
     max-width: 380px;
     margin: 22px 0 28px;
   }
   .hero-buttons .button {
-    font-size: 10px;
+    font-size: 13px;
     padding: 14px 17px;
   }
   .hero-buttons .text-link {
-    font-size: 9px;
+    font-size: 13px;
   }
   .hero-footnote {
     margin-top: 30px;
-    font-size: 10px;
+    font-size: 13px;
   }
   .hero-footnote small {
-    font-size: 8px;
+    font-size: 12px;
   }
   .hero-art {
     max-width: 440px;
@@ -4205,10 +4272,10 @@ th {
     font-size: 30px;
   }
   .book-page small {
-    font-size: 6px;
+    font-size: 11px;
   }
   .right-page small {
-    font-size: 5px;
+    font-size: 11px;
     left: 13px;
   }
   .sun-drawing {
@@ -4241,16 +4308,16 @@ th {
     padding: 15px 17px;
   }
   .art-tag strong {
-    font-size: 10px;
+    font-size: 13px;
   }
   .art-tag > div {
-    font-size: 8px;
+    font-size: 12px;
   }
   .art-top {
     top: 48px;
     left: 32px;
     right: 32px;
-    font-size: 6px;
+    font-size: 11px;
   }
   .art-star.star-one {
     right: 34px;
@@ -4263,7 +4330,7 @@ th {
   }
   .art-bottom {
     bottom: 23px;
-    font-size: 7px;
+    font-size: 12px;
   }
   .handwritten {
     font-size: 15px;
@@ -4277,7 +4344,7 @@ th {
     font-size: 14px;
   }
   .subject-strip i {
-    font-size: 10px;
+    font-size: 13px;
   }
   .subject-strip i:nth-of-type(2) {
     display: none;
@@ -4294,10 +4361,10 @@ th {
     letter-spacing: -1.3px;
   }
   .section .eyebrow {
-    font-size: 8px;
+    font-size: 12px;
   }
   .section p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .approach-items article {
     gap: 24px;
@@ -4310,7 +4377,7 @@ th {
     font-size: 14px;
   }
   .approach-items p {
-    font-size: 11px;
+    font-size: 14px;
     max-width: 100%;
   }
   .section-heading {
@@ -4318,7 +4385,7 @@ th {
     margin-bottom: 25px;
   }
   .section-heading > p {
-    font-size: 11px;
+    font-size: 14px;
     margin: 20px 0;
   }
   .programme-grid {
@@ -4332,7 +4399,7 @@ th {
     font-size: 19px;
   }
   .programme-grid p {
-    font-size: 10px;
+    font-size: 13px;
     margin-bottom: 23px;
   }
   .programme-number {
@@ -4346,7 +4413,7 @@ th {
     font-size: 31px;
   }
   .contact-section p {
-    font-size: 11px;
+    font-size: 14px;
   }
   .contact-details {
     margin-top: 45px;
@@ -4356,11 +4423,11 @@ th {
   }
   .contact-details > a,
   .contact-details > span {
-    font-size: 12px;
+    font-size: 14px;
     gap: 13px;
   }
   .contact-details small {
-    font-size: 9px;
+    font-size: 13px;
   }
   .landing-footer {
     flex-direction: column;
@@ -4372,7 +4439,7 @@ th {
     font-size: 24px;
   }
   .landing-footer .demo-note {
-    font-size: 8px;
+    font-size: 12px;
   }
   .auth-page {
     grid-template-columns: 1fr;
@@ -4397,7 +4464,7 @@ th {
     min-height: calc(100dvh - 103px);
   }
   .back-link {
-    font-size: 10px;
+    font-size: 13px;
   }
   .auth-form {
     padding: 30px 0 10px;
@@ -4407,30 +4474,30 @@ th {
     font-size: 42px;
   }
   .auth-form > p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .auth-form input {
-    font-size: 13px;
+    font-size: 15px;
     padding: 14px 12px;
   }
   .auth-form .field > span {
-    font-size: 11px;
+    font-size: 14px;
   }
   .auth-form .button {
-    font-size: 12px;
+    font-size: 14px;
     padding: 14px;
   }
   .demo-credentials strong {
-    font-size: 11px;
+    font-size: 14px;
   }
   .demo-credentials p {
-    font-size: 10px;
+    font-size: 13px;
   }
   .demo-credentials code {
-    font-size: 9px;
+    font-size: 13px;
   }
   .auth-form > .auth-switch {
-    font-size: 10px;
+    font-size: 13px;
   }
   .register-page > header {
     padding: 25px 22px;
@@ -4440,7 +4507,7 @@ th {
     font-size: 22px;
   }
   .register-page > header > .text-link {
-    font-size: 8px;
+    font-size: 12px;
     max-width: 100px;
     line-height: 1.7;
   }
@@ -4454,7 +4521,7 @@ th {
     font-size: 36px;
   }
   .register-intro {
-    font-size: 10px;
+    font-size: 13px;
   }
   .registration-panel {
     padding: 22px;
@@ -4463,13 +4530,13 @@ th {
     grid-template-columns: 1fr;
   }
   .registration-panel .form-section-label {
-    font-size: 8px;
+    font-size: 12px;
   }
   .subject-options {
     gap: 12px;
   }
   .subject-options label {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 @media (max-width: 430px) {
@@ -4480,7 +4547,7 @@ th {
     font-size: 25px;
   }
   .page-head p {
-    font-size: 10px;
+    font-size: 13px;
   }
   .page-head {
     gap: 15px;
@@ -4500,21 +4567,21 @@ th {
     transform: scale(0.75);
   }
   .welcome-banner p {
-    font-size: 9px;
+    font-size: 13px;
     max-width: 220px;
   }
   .welcome-banner a {
-    font-size: 10px;
+    font-size: 13px;
   }
   .banner-label {
-    font-size: 6px;
+    font-size: 11px;
     letter-spacing: 1.3px;
   }
   .metric {
     padding: 14px;
   }
   .metric-top {
-    font-size: 9px;
+    font-size: 13px;
   }
   .metric-icon {
     width: 27px;
@@ -4529,7 +4596,7 @@ th {
     margin: 9px 0;
   }
   .metric-bottom {
-    font-size: 7px;
+    font-size: 12px;
   }
   .metric-bottom > a {
     display: none;
@@ -4544,16 +4611,16 @@ th {
     font-size: 18px;
   }
   .panel-head p {
-    font-size: 9px;
+    font-size: 13px;
   }
   .panel-head .text-link {
-    font-size: 9px;
+    font-size: 13px;
   }
   .chart-legend {
-    font-size: 7px;
+    font-size: 12px;
   }
   .chart-summary span {
-    font-size: 8px;
+    font-size: 12px;
   }
   .chart-summary strong {
     font-size: 23px;
@@ -4566,18 +4633,18 @@ th {
     display: none;
   }
   .transactions-panel td {
-    font-size: 10px;
+    font-size: 13px;
     padding: 13px 14px;
   }
   .transactions-panel th {
-    font-size: 7px;
+    font-size: 12px;
     padding: 11px 14px;
   }
   .transactions-panel td strong {
-    font-size: 10px;
+    font-size: 13px;
   }
   .transactions-panel .badge {
-    font-size: 8px;
+    font-size: 12px;
   }
   .chart-summary {
     padding-left: 18px;
@@ -4586,17 +4653,17 @@ th {
     gap: 14px;
   }
   .breadcrumb {
-    font-size: 9px;
+    font-size: 13px;
     gap: 7px;
   }
   .breadcrumb strong {
-    font-size: 9px;
+    font-size: 13px;
   }
   .topbar {
     padding: 0 15px;
   }
   .closing-note {
-    font-size: 7px;
+    font-size: 12px;
   }
   .student-metrics {
     grid-template-columns: 1fr 1fr;
@@ -4618,10 +4685,10 @@ th {
     font-size: 24px;
   }
   .student-metrics .metric-top {
-    font-size: 9px;
+    font-size: 13px;
   }
   .student-metrics .metric-bottom {
-    font-size: 8px;
+    font-size: 12px;
   }
   .library-banner {
     padding: 20px 17px;
@@ -4634,7 +4701,7 @@ th {
     display: none;
   }
   .library-banner p {
-    font-size: 9px;
+    font-size: 13px;
   }
   .materials-grid {
     grid-template-columns: 1fr;
@@ -4647,10 +4714,10 @@ th {
     font-size: 30px;
   }
   .material-cover > div > span {
-    font-size: 8px;
+    font-size: 12px;
   }
   .material-cover .badge {
-    font-size: 8px;
+    font-size: 12px;
     top: 20px;
     right: 20px;
   }
@@ -4665,16 +4732,16 @@ th {
     font-size: 23px;
   }
   .material-body > p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .resource-meta {
-    font-size: 8px;
+    font-size: 12px;
   }
   .material-actions .text-button {
-    font-size: 11px;
+    font-size: 14px;
   }
   .material-admin > .text-button {
-    font-size: 10px;
+    font-size: 13px;
   }
   .announcement-card {
     padding: 19px 17px;
@@ -4691,13 +4758,13 @@ th {
     width: 18px;
   }
   .announcement-copy > p {
-    font-size: 11px;
+    font-size: 14px;
   }
   .announcement-meta .badge {
-    font-size: 8px;
+    font-size: 12px;
   }
   .announcement-meta > span:not(.badge) {
-    font-size: 8px;
+    font-size: 12px;
   }
   .announcement-copy {
     flex-basis: calc(100% - 50px);
@@ -4712,12 +4779,12 @@ th {
     font-size: 21px;
   }
   .field > span {
-    font-size: 10px;
+    font-size: 13px;
   }
   .field input,
   .field select,
   .field textarea {
-    font-size: 12px;
+    font-size: 14px;
   }
   .modal .student-form .form-grid {
     grid-template-columns: 1fr;
@@ -4731,7 +4798,7 @@ th {
     font-size: 21px;
   }
   .profile-hero p {
-    font-size: 10px;
+    font-size: 13px;
   }
   .detail-grid {
     grid-template-columns: 1fr;
@@ -4740,10 +4807,10 @@ th {
     gap: 19px;
   }
   .report-tabs button {
-    font-size: 9px;
+    font-size: 13px;
   }
   .report-toolbar > .button {
-    font-size: 10px;
+    font-size: 13px;
     padding: 10px 12px;
   }
   .hero {
@@ -4754,20 +4821,20 @@ th {
     letter-spacing: -2.6px;
   }
   .hero-copy > .eyebrow {
-    font-size: 6px;
+    font-size: 11px;
     letter-spacing: 1px;
   }
   .hero-copy > p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .hero-buttons {
     gap: 18px;
   }
   .hero-buttons .button {
-    font-size: 10px;
+    font-size: 13px;
   }
   .hero-buttons .text-link {
-    font-size: 10px;
+    font-size: 13px;
   }
   .hero-art {
     min-height: 405px;
@@ -4786,17 +4853,17 @@ th {
     font-size: 28px;
   }
   .right-page small {
-    font-size: 4px;
+    font-size: 11px;
     left: 12px;
     letter-spacing: 1px;
   }
   .art-top {
-    font-size: 5px;
+    font-size: 11px;
     left: 25px;
     right: 25px;
   }
   .art-top > span:last-child {
-    font-size: 4px;
+    font-size: 11px;
   }
   .art-star.star-one {
     font-size: 39px;
@@ -4813,35 +4880,35 @@ th {
     padding: 12px 14px;
   }
   .art-tag strong {
-    font-size: 9px;
+    font-size: 13px;
   }
   .art-tag > div {
-    font-size: 7px;
+    font-size: 12px;
   }
   .art-bottom {
     bottom: 19px;
-    font-size: 6px;
+    font-size: 11px;
     left: 23px;
     right: 23px;
   }
   .handwritten {
-    font-size: 13px;
+    font-size: 15px;
   }
   .subject-strip {
     gap: 18px;
     padding: 24px 18px;
   }
   .subject-strip b {
-    font-size: 13px;
+    font-size: 15px;
   }
   .subject-strip i {
-    font-size: 8px;
+    font-size: 12px;
   }
   .section h2 {
     font-size: 30px;
   }
   .section p {
-    font-size: 11px;
+    font-size: 14px;
   }
   .programme-grid a {
     padding: 21px 16px;
@@ -4850,7 +4917,7 @@ th {
     font-size: 18px;
   }
   .programme-grid p {
-    font-size: 9px;
+    font-size: 13px;
   }
   .programme-number {
     font-size: 45px;
@@ -4859,7 +4926,7 @@ th {
     font-size: 28px;
   }
   .contact-section .button {
-    font-size: 9px;
+    font-size: 13px;
   }
   .register-page > header {
     padding: 23px 20px;
@@ -4871,7 +4938,7 @@ th {
     width: 32px;
   }
   .register-page > header > .text-link {
-    font-size: 7px;
+    font-size: 12px;
     max-width: 90px;
   }
 }
@@ -4917,7 +4984,7 @@ th {
     margin: 0 0 20px;
   }
   .print-heading p {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 8px;
   }
   .panel {
@@ -4932,7 +4999,7 @@ th {
     overflow: visible;
   }
   table {
-    font-size: 10px;
+    font-size: 13px;
   }
   td,
   th {

@@ -236,13 +236,13 @@ export default function Reports() {
                     dataKey="name"
                     axisLine={false}
                     tickLine={false}
-                    tick={{ fontSize: 12 }}
+                    tick={{ fill: "#27483e", fontSize: 13, fontWeight: 600 }}
                   />
                   <YAxis
                     allowDecimals={false}
                     axisLine={false}
                     tickLine={false}
-                    tick={{ fontSize: 11 }}
+                    tick={{ fill: "#27483e", fontSize: 12, fontWeight: 600 }}
                   />
                   <Tooltip />
                   <Bar
